@@ -1,0 +1,13 @@
+extends layout
+
+block title 
+  title SA - #{title}
+
+block content
+  h1.grandtitle= title
+  p Bienvenue dans "#{title}"
+
+  section
+    h2 Etape 1 : Importer un fichier 
+    input(type='file', id='my_file_input')
+    p#upload_message
