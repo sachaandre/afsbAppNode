@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFSB Contrib Importer</title>
+    <script src="public/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .error{color: red}
+        .success{color:green}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <p>AFSB Contrib Importer</p>
+        </div>    
+    </header>
+    <section>
+        <h1>AFSB Contrib Importer</h1>
+        <p>Applicaiton d'import des contributions</p>
+    </section>
+    <section>
+        <h2>Etape 1 : Importer un fichier</h2>
+        <input type="file" id="my_file_input" />
+        <p id="upload_message"></p>
+    </section>
+    <section>
+        <h2>Etape 2 : Préparer les blocs osuny</h2>
+        <p id="resultatJSON"></p>
+    </section>
+    <script src="eventListeners.js"></script>
+</body>
+</html>
