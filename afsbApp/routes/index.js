@@ -4,7 +4,7 @@ const fetch = (...args) =>
 	import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 const postOsunyPost = async (data) => {
-  const url = "https://sachaandre.osuny.org/api/osuny/v1/communication/websites/17749722-c53f-4969-a061-605694d98141/posts"
+  const url = "https://sachaandre.osuny.org/api/osuny/v1/communication/websites/"+ process.env.OSUNY_WEBSITE_ID +"/posts"
   try{
     const response = await fetch(url, {
       method: "POST",
